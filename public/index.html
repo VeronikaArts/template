@@ -1,37 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head >
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="header">
+      <a href="./search.html">
+        <img class="header__searchIcon" src="search.png">
+      </a>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <a ><p class="logo_text">Last.fm</p>
+      </a>
+      <div class="header__nav">
+        
+        <a  href="/" class="header__navLink">Home</a>
+        <a href="/" class="header__navLink">Live</a>
+        <a href="/" class="header__navLink">Music</a>
+        <a href="/" class="header__navLink">Charts</a>
+        <a href="/" class="header__navLink">Events</a>
+        <a href="/" class="header__navLink">Features</a>
+       
+      </div>
+    </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+    <main class="content">
+      <h1 class="headline__h1">Music</h1>
+      <h2 class="headline__h2">Hot right now</h2>
+      
+
+      <section class="flex__container__artists">
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+         
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+     
+
+        
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+         
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+         
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+         
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+
+        <div class="artist__card">
+          <a class="artist__link base_link" href="/">
+            <img class="avatar" src="music.png">
+            <h3 class="headline__h3">Musician</h3>
+          </a>
+          
+        </div>
+    </section>
+
+    <h2 class="headline__h2">Popular tracks</h2>
+    <div class="hr__line"></div>
+    <div class="flex__container__popularTracks">
+
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+        </div>
+      </div>
+
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+        </div>
+      </div>
+
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+        </div>
+      </div>
+
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+        </div>
+      </div>
+
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+     
+          
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+        </div>
+
+
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+      
+          
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+          
+         
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+         
+          
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+       
+          
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+
+          
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+        
+        
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+        
+        
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+     
+          
+        </div>
+      </div>
+      <div class="track">
+        <img class="track__img" src="musicRetro.png">
+        <div class="track__info">
+          <h3 class="track__name"><a class="track__name__link base_link" href="/">Track</a></h3>
+          
+
+         
+        </div>
+      </div>
+
+    </div>
+
+
+    </main>
+
+
+
+
+
+    
+    <!---<noscript>You need to enable JavaScript to run this app.</noscript>--->
+
+
+    <footer class="footer">
+      <div class="footer__bottom">
+        
+       <p class="timeZone">Time zone: <strong class="current__language">Europe/Moscow</strong></p>
+        <div class="footer__legal">
+          <ul class="footer__legal__list">
+            <li class="footer__legal__list__item">
+              <a class="base_link" href="https://www.paramount.com/">CBS Interactive</a>
+              <span>© 2022</span>
+              <span>Last.fm</span>
+             
+            </li>
+            <li class="footer__legal__list__item"><a class="base_link" href="https://www.last.fm/legal/terms">Terms of Use</a></li>
+            <li class="footer__legal__list__item"><a class="base_link" href="https://www.viacomcbsprivacy.com/ru/policy">Privacy Policy</a></li>
+            <li class="footer__legal__list__item"><a class="base_link" href="https://www.last.fm/legal">Legal Policies</a></li>
+            <li class="footer__legal__list__item"><a class="base_link" href="https://www.viacomcbsprivacy.com/ru/cookies">Cookies Policy</a></li>
+            <li class="footer__legal__list__item"><a class="base_link" href="/">Cookie Information</a></li>
+            <li class="footer__legal__list__item"><a claheader__linkss="base_link" href="https://careers.paramount.com/">Jobs at ViacomCBS</a></li>
+            <li class="footer__legal__list__item"><a class="base_link" href="https://www.last.fm/">Last.fm Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
   </body>
 </html>

@@ -1,0 +1,370 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(248, 237, 230);
+    position: sticky; 
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgb(248, 237, 230);
+    font-size: 14px;
+ }
+
+ body {
+    margin-left: 0.2%;
+    padding: 1px 1px;
+    width: 100% auto;
+    background: rgba(61, 28, 5, 0.664);
+}
+
+.logo {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.logo_text {
+    width: 100%;
+    height: 100%;
+    font-family: Courier New, monospace;
+    letter-spacing: 2px;
+    stroke: #eb9e46;
+    font-size: 35px;
+    font-weight: 100;
+    stroke-width: 3;
+    position: relative;
+    
+    font-style: Courier New, monospace;
+    padding: 10px;
+  margin: 10px 0;
+ 
+}
+
+/*тело*/
+
+.linq_a:hover {
+    background: #f9eddc;
+    border-color: #eb9e46;
+    border: 3px solid #eb9e46;
+    font-weight: 500;
+}
+
+.linq_a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #f9ebdc;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.linq_a:after {
+    position: absolute;
+    content: "";
+    border: .8em solid transparent;
+    left: -10em;
+    top: 35%;
+    margin-top: -.5em;
+    transition: all .0s ease-out;
+}
+
+.linq_a:hover:after {
+    left: -.93em;
+    border-left-color: #f9ebdc;
+}
+
+.site_body {
+    margin: 0;
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+    margin: 0;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        'post-1 post-1 track_list_h track_list_h track_list_h'
+        'post-1 post-1 post-2 post-2 post-2';
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    height: 700px;
+    gap: 20px;
+}
+
+.post-1 {
+    grid-area: post-1;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.post-2::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+
+.header__navLink {
+    color: inherit;
+    text-decoration: none;
+
+    width: 100%;
+    height: 100%;
+    font-family: Courier New, monospace;
+    letter-spacing: 2px;
+    stroke: #eb9e46;
+    font-size:20px;
+    font-weight: 100;
+    stroke-width: 3;    
+    font-style: Courier New, monospace;
+    padding: 10px;
+  margin: 10px 0;
+}
+
+.header__searchIcon {
+    
+    height: 38px;
+    width: 38px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+/*футер*/
+.footer {
+    height: 80px;
+    background-color:  rgb(248, 237, 230);
+    font-family: Courier New, monospace;
+    padding: 48px 10px ;
+    
+}
+
+
+
+.footer__heading {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.footer__list__link {
+    color: rgb(139, 134, 134);
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+}
+.footer__bottom {
+    border-top: 1px solid #222;
+    padding-top: 35px;
+    padding-bottom: 38px;
+}
+
+.footer__logo {
+    width: 37px;
+    height: 20px;
+}
+.footer__bottom_flex_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.current__language{
+    margin-right: 20px;
+    color: rgb(62, 61, 59);
+    display: inline;
+}
+
+.timeZone{
+    font-size: 14px;
+    color: #666;
+}
+.footer__legal{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+.footer__legal__list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.footer__legal__list__item{
+    margin-right: 5px;
+}
+ul.footer__legal__list li + li:before{
+    content: "/ ";
+}
+ul.footer__legal__list li a{
+    color: #666;
+    text-decoration: none;
+}
+
+/*контент*/
+.content {
+
+    padding: 0 20px;
+    font-family: Courier New, monospace;
+}
+.headline__h1 {
+    margin-top: 48px;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -.8px;
+    color: rgb(248, 237, 230);
+    text-align: center;
+}
+
+.headline__h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 30px 0 18px 0;
+    color: rgb(248, 237, 230);
+    text-align: center;
+}
+/*.hr__line {
+    background: #b90000;
+    height: 3px;
+    margin: 0 auto;
+    width: 55px;
+}*/
+.flex__container__artists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+    
+}
+
+.flex__container__artists{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 24px auto 48px auto;
+    
+}
+
+.artist__card {
+    width: 160px;
+    height: 190px;
+    margin: 24px 15px 0;
+}
+.avatar {
+    width: 140px;
+    height: 140px;
+    margin: 0 10px;
+
+}
+.artist__link {
+    color: rgb(248, 237, 230);
+    text-decoration: none;
+    font-size: 14px;
+}
+.headline__h3{
+    font-size: 14px;
+    color: inherit;
+}
+.genres__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+    list-style-type: none;
+}
+.genre {
+    margin-right: 5px;
+    color: rgb(248, 237, 230);
+    font-size: 12px;
+    line-height: 18px;
+}
+.genreLink {
+    color: rgb(248, 237, 230);
+    text-decoration: none;
+}
+li.genre + li:before{
+    content: "/ ";
+}
+.flex__container__popularTracks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 24px auto 48px auto;
+}
+.base_link:hover {
+    text-decoration: underline;
+}
+.track {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+    margin: 10px 0;
+}
+.track__info{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.track__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.track__name,
+.track__nameArtist {
+    font-size: 14px;
+    color: rgb(248, 237, 230);
+}
+.track__nameArtist__link,
+.track__name__link {
+    text-decoration: none;
+    color: rgb(248, 237, 230);
+}
+
+
+.rectangle {
+    counter-reset: li;
+    list-style: none;
+    font-size: 26px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    margin: 0;
+}
