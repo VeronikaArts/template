@@ -1,14 +1,13 @@
 /* заголовок */
 .header {
-    width: 100%;
-    height: 70px;
-    background-color: rgb(248, 237, 230);
-    position: sticky; 
+    position: sticky; /* == position: fixed; */
     top: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  rgb(248, 237, 230);
+    background-color: #000;
+    color: lightgrey;
     font-size: 14px;
  }
 
@@ -16,7 +15,7 @@
     margin-left: 0.2%;
     padding: 1px 1px;
     width: 100% auto;
-    background: rgba(61, 28, 5, 0.664);
+    background: white;
 }
 .header__searchIcon {
     
@@ -30,59 +29,57 @@
 .logo_text {
     width: 100%;
     height: 100%;
-    font-family: Courier New, monospace;
+    font-family: Helvetica,Arial,Sans-serif;
     letter-spacing: 2px;
-    stroke: #eb9e46;
+    /* stroke: #eb9e46; */
     font-size: 35px;
     font-weight: 100;
     stroke-width: 3;
     position: relative;
     
-    font-style: Courier New, monospace;
+    font-style: Helvetica,Arial,Sans-serif;
     padding: 10px;
   margin: 10px 0;
  
 }
 
 .header__navLink {
-    color: inherit;
+    /* color: inherit;
     text-decoration: none;
 
     width: 100%;
     height: 100%;
-    font-family: Courier New, monospace;
+    font-family: Helvetica,Arial,Sans-serif;
     letter-spacing: 2px;
     stroke: #eb9e46;
     font-size:20px;
     font-weight: 100;
     stroke-width: 3;    
-    font-style: Courier New, monospace;
+    font-style: Helvetica,Arial,Sans-serif;
     padding: 10px;
-  margin: 10px 0;
+  margin: 10px 0; */
+  color: inherit;
+  font-family: Helvetica,Arial,Sans-serif;
+  text-decoration: none;
+
 }
 
 /*тело*/
 .content {
 
     padding: 0 20px;
-    font-family: Courier New, monospace;
+    font-family: Helvetica,Arial,Sans-serif;
 }
 .headline__h1 {
     margin-top: 48px;
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -.8px;
-    color: rgb(248, 237, 230);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
-.headline__h2 {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 30px 0 18px 0;
-    color: rgb(248, 237, 230);
-    text-align: center;
-}
+
 
 .flex__container__artists{
 
@@ -108,7 +105,7 @@
 
 }
 .artist__link {
-    color: rgb(248, 237, 230);
+    color:black;
     text-decoration: none;
     font-size: 14px;
 }
@@ -152,19 +149,19 @@
 .track__name,
 .track__nameArtist {
     font-size: 14px;
-    color: rgb(248, 237, 230);
+    color: black;
 }
 .track__nameArtist__link,
 .track__name__link {
     text-decoration: none;
-    color: rgb(248, 237, 230);
+    color: black;
 }
 
 /* футер */
 .footer {
     height: 80px;
-    background-color:  rgb(248, 237, 230);
-    font-family: Courier New, monospace;
+    background-color:  rgb(246, 246, 246);
+    font-family: Helvetica,Arial,Sans-serif;
     padding: 48px 10px ;
     
 }
